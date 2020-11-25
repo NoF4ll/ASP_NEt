@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Rücksendeformular</h2>
+
+<form action="/home/checkForm" method="post">
+
+
+    <label for="firstname">Vorname</label>
+    <input type="text" id="firstname" name="firstname" />
+    <label for="lastname">Nachname</label>
+    <input type="text" id="lastname" name="lastname" />
+    <br />
+
+    <label for="product">Welches Produkt möchten sie zurücksenden?</label>
+    <br />
+
+    <input type="radio" id="product" name="product" value="jersey" />FNATIC Jersy
+    <br />
+    <input type="radio" id="prodcut" name="product" value="chair" />Fnatic DX Racer Gaming Stuhl
+    <br />
+    <input type="radio" id="prodcut" name="product" value="keyboard" />Streak 65 Esports Keyboard
+    <br />
+    <input type="radio" id="prodcut" name="product" value="headset" />React Esports Performance Headset
+    <br />
+
+    <label for="reason">Grund der Rückgabe</label>
+    <br />
+    <input type="checkbox" id="reason" name="reason" value="1" />Gefällt mir nicht
+    <br />
+    <input type="checkbox" id="reason" name="reason" value="2" />Defekt
+    <br />
+    <input type="checkbox" id="reason" name="reason" value="3" />Zu klein(nur beim Jersey)
+    <br />
+    <input type="submit" value="absenden" />
+    <br />
+    <input type="reset" value="löschen" />
+    <br />
+</form>
+<td></td>

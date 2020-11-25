@@ -1,0 +1,93 @@
+﻿
+            @*
+        For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+            *@
+            @{
+            }
+
+            <h2>
+                Regestrierung New FNATIC PLAYER
+            </h2>
+
+ 
+            <form action="/home/checkForm" method="post">
+
+
+                <label for="firstname">Vorname</label>
+                <input type="text" id="firstname" name="firstname" />
+
+                <label for="lastname">Nachname</label>
+                <input type="text" id="lastname" name="lastname" />
+                <br />
+                <label for="ingamename">Summonername</label>
+                <br />
+                <input type="text" id="ingamename" name="ingamename" />
+                <br />
+
+                <label for="gender">Geschlecht</label>
+                <br />
+
+                <input type="radio" id="gender" name="gender" value="male" />männlich
+                <br />
+                <input type="radio" id="gender" name="gender" value="female" />weiblich
+                <br />
+                <input type="radio" id="gender" name="gender" value="notSpecified" />nicht angegeben
+                <br />
+                <label for="champion">Welche Championart beherscht du?</label>
+                <br />
+                <input type="checkbox" id="champion" name="champion" value="Bruiser" />Bruiser
+                <br />
+                <input type="checkbox" id="hobbies" name="champion" value="Tank" />Tank
+                <br />
+                <input type="checkbox" id="champion" name="champion" value="Mage" />Mage
+                <br />
+                <input type="checkbox" id="champion" name="champion" value="ADC" />ADC
+                <br />
+                <input type="checkbox" id="champion" name="champion" value="Support" />Support
+                <br />
+
+                <label for="rank">Rang</label>
+                <br />
+                <select name="rank" id="rank">
+                    <option value="chl">Challenger</option>
+                    <option value="gm">Grandmaster</option>
+                    <option value="ma">Master</option>
+                    <option value="dia">Diamond</option>
+                    <option value="pl">Platin</option>
+                    <option value="go">Gold</option>
+                    <option value="sil">Silver</option>
+                    <option value="br">Bronze</option>
+                    <option value="ir">Iron</option>
+                    <option value="none" selected="selected">bitte wählen</option>
+                </select>
+                <br />
+                <label for="lp">Derzeite LP</label>
+                <br />
+                <input type="number" id="lp" name="lp" />
+
+
+                <br />
+                <br />
+
+                <label for="email">Email für Rückfragen</label>
+                <br />
+                <input type="email" id="email" name="email" />
+                <br />
+                <label for="date">Geburtsdatum</label>
+                <br />
+                <input type="date" id="date" name="date" />
+                <br />
+                <input type="submit" value="absenden" />
+                <br />
+                <input type="reset" value="löschen" />
+                <br />
+
+            </form>
+            <td></td>
+      
+   
+    <tfoot>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+    </tfoot>
